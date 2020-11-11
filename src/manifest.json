@@ -1,0 +1,24 @@
+{
+  "name": "Visual Snow Relief",
+  "version": "1.0",
+  "description": "Add a shade to the browser page like https://youtu.be/800f9UNiF4Y",
+  "icons": {
+    "16": "media/favicon16.png",
+    "32": "media/favicon32.png",
+    "48": "media/favicon48.png",
+    "128": "media/favicon128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["app.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "media/filter.svg"
+  ],
+  "manifest_version": 2
+}
